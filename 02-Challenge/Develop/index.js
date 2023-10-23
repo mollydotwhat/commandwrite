@@ -1,4 +1,5 @@
 // TODO: Include packages needed for this application
+//inquirer (this uses 8.2.4)
 
 // TODO: Create an array of questions for user input
 const questions = [];
