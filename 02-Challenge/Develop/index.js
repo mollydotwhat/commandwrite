@@ -34,14 +34,29 @@ const questions = [
       },
       {
         type: "input",
-        message: "",
-        name: ""
+        message: "Describe how to install your project",
+        name: "installation"
+      },
+      {
+        type: "input",
+        message: "Describe how to use your project",
+        name: "usage"
+      },
+      {
+        type: "input",
+        message: "Explain the contribution guidelines for your project",
+        name: "contribution"
+      },
+      {
+        type: "input",
+        message: "How can you (general) test your project?",
+        name: "testing"
       },
       {
         type: "input",
         message: "What is your email?",
-        name: "github"
-      }
+        name: "email"
+      },
 ];
 
 // TODO: Create a function to write README file
