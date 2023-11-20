@@ -28,6 +28,7 @@ const questions = [
             "Mozilla Public License",
             "3-Clause BSD License",
             "2-Clause BSD License"
+            //want to include creative commons but can't decide which option
         ]
       },
       {
