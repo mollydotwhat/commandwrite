@@ -4,6 +4,8 @@ const inquirer = require('inquirer');
 const mysql = require('mysql2');
 const fs = require('fs');
 
+const generateMarkdown = require('./utils/generateMarkdown');
+
 // TODO: Create an array of questions for user input
 // readme has list
 const questions = [
@@ -14,7 +16,7 @@ const questions = [
       },
     {
         type: "input",
-        message: "What's your project title?",
+        message: "What's your project's title?",
         name: "projectname"
       },
       {
@@ -22,9 +24,10 @@ const questions = [
         message: "Choose a license",
         name: "license",
         choices: [
-            "option",
-            "option",
-            "option"
+            "MIT License",
+            "Mozilla Public License",
+            "3-Clause BSD License",
+            "2-Clause BSD License"
         ]
       },
       {
@@ -54,7 +57,7 @@ const questions = [
       },
       {
         type: "input",
-        message: "What is your email?",
+        message: "What is your email address?",
         name: "email"
       },
 ];
