@@ -44,19 +44,17 @@ function renderLicenseSection(license) {
   var aLink = renderLicenseLink(license);
   console.log("rendering license section");
   return `
-
-  This project uses the ${license} ${aBadge} license. You can see this license at ${aLink}.
-
+  This project uses the ${license} . You can see this license at [this link](${aLink}).
+ 
+  ${aBadge}
   `
 }
 
-// TODO: Create a function to generate markdown for README
-// sections: title, Description, Table of Contents, Installation, Usage (how to), License, Contributing (contribution guideline list), Tests (instructions), and Questions (email and github username go here)
+
 function generateMarkdown(data) {
   var licenseSection = renderLicenseSection(data.license);
   console.log("generating markdown")
   return `# ${data.title}
-  //license badge
   ${renderLicenseBadge(data.license)}
 
   ## Description
@@ -64,19 +62,19 @@ function generateMarkdown(data) {
 
   ## Table of Contents
   
-    [Description](#description)
+   - [Description](#description)
 
-    [Installation](#installation)
+   - [Installation](#installation)
 
-    [Usage](#usage)
+   - [Usage](#usage)
 
-    [License](#license)
+   - [License](#license)
     
-    [Contributing](#contributing)
+   - [Contributing](#contributing)
 
-    [Testing](#testing)
+   - [Testing](#testing)
 
-    [Questions](#questions)
+   - [Questions](#questions)
 
 
   ## Installation
@@ -96,7 +94,7 @@ function generateMarkdown(data) {
 
   ## Contributing
   
-    ${data.contributing}
+    ${data.contribution}
 
 
   ## Testing
@@ -106,7 +104,7 @@ function generateMarkdown(data) {
 
   ## Questions
 
-    Direct questions to ${data.github} on github, or emailed to ${data.email}.
+    Direct questions to ${data.username} on github, or emailed to ${data.email}.
 
 `;
 }
