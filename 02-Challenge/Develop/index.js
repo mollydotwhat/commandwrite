@@ -17,11 +17,11 @@ const questions = [
     {
         type: "input",
         message: "What's your project's title?",
-        name: "projectname"
+        name: "title"
       },
       {
         type: "list",
-        message: "Choose a license",
+        message: "Choose a license:",
         name: "license",
         choices: [
             "MIT License",
