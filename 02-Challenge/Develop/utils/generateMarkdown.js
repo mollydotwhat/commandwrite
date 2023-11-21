@@ -13,7 +13,7 @@ function renderLicenseBadge(license) {
   } else {
     licenseBadgeCode = ""
   }
-  console.log("badge rendered!")
+  console.log("badge rendering")
   return licenseBadgeCode;
 }
 
@@ -32,7 +32,7 @@ function renderLicenseLink(license) {
   } else {
     licenseLink = ""
   }
-  console.log("link rendered!")
+  console.log("link rendering!")
   return licenseLink;
   // this goes in license SECTION
 }
