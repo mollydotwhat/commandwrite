@@ -5,13 +5,13 @@ function renderLicenseBadge(answers) {
   var licenseBadgeCode; //backticks, markdown img link
 
   if (licensePicked === "MIT License"){
-    licenseBadgeCode = `[![License]()]()`
+    licenseBadgeCode = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
   } else if (licensePicked === "Mozilla Public License"){
-    licenseBadgeCode = `[![License]()]()`
+    licenseBadgeCode = `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
   } else if (licensePicked === "3-Clause BSD License"){
-    licenseBadgeCode = `[![License]()]()`
+    licenseBadgeCode = `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`
   } else if (licensePicked === "2-Clause BSD License"){
-    licenseBadgeCode = `[![License]()]()`
+    licenseBadgeCode = `[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)`
   } else {
     licenseBadgeCode = ""
   }
