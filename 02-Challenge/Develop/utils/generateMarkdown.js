@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// render badge according to user choice
 function renderLicenseBadge(answers) {
   var licensePicked = answers.license;
   var licenseBadgeCode; //backticks, markdown img link
@@ -19,8 +18,7 @@ function renderLicenseBadge(answers) {
   return licenseBadgeCode;
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// render link according to user choice
 function renderLicenseLink(answers) {
   var licensePicked = answers.license;
   var licenseLink;
