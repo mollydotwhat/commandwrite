@@ -1,13 +1,24 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  //if statements per option
+function renderLicenseBadge(answers) {
+  var licensePicked = answers.license;
+  var licenseBadgeCode; //backticks, markdown img link
+
+  if (licensePicked === "MIT License"){licenseBadgeCode = `[![License]()]()`} 
+  else if (licensePicked === "Mozilla Public License"){ licenseBadgeCode = `[![License]()]()`} 
+  else if (licensePicked === "3-Clause BSD License"){licenseBadgeCode = `[![License]()]()`} 
+  else if (licensePicked === "2-Clause BSD License"){licenseBadgeCode = `[![License]()]()`} 
+  else {licenseBadgeCode = ""}
+  
+  return licenseBadgeCode;
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   //if statements per option
+  // last should be else {""}
+  // this goes in license SECTION
 }
 
 // TODO: Create a function that returns the license section of README
