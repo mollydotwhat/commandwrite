@@ -26,13 +26,13 @@ function renderLicenseLink(answers) {
   var licenseLink;
 
   if (licensePicked === "MIT License"){
-    licenseLink = ``
+    licenseLink = `https://opensource.org/licenses/MIT`
   } else if (licensePicked === "Mozilla Public License"){
-    licenseLink = ``
+    licenseLink = `https://opensource.org/licenses/MPL-2.0`
   } else if (licensePicked === "3-Clause BSD License"){
-    licenseLink = ``
+    licenseLink = `https://opensource.org/licenses/BSD-3-Clause`
   } else if (licensePicked === "2-Clause BSD License"){
-    licenseLink = ``
+    licenseLink = `https://opensource.org/licenses/BSD-2-Clause`
   } else {
     licenseLink = ""
   }
