@@ -21,9 +21,23 @@ function renderLicenseBadge(answers) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
-  //if statements per option
-  // last should be else {""}
+function renderLicenseLink(answers) {
+  var licensePicked = answers.license;
+  var licenseLink;
+
+  if (licensePicked === "MIT License"){
+    licenseLink = ``
+  } else if (licensePicked === "Mozilla Public License"){
+    licenseLink = ``
+  } else if (licensePicked === "3-Clause BSD License"){
+    licenseLink = ``
+  } else if (licensePicked === "2-Clause BSD License"){
+    licenseLink = ``
+  } else {
+    licenseLink = ""
+  }
+
+  return licenseLink;
   // this goes in license SECTION
 }
 
