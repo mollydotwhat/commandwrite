@@ -50,6 +50,25 @@ function renderLicenseSection(license) {
 // sections: title, Description, Table of Contents, Installation, Usage (how to), License, Contributing (contribution guideline list), Tests (instructions), and Questions (email and github username go here)
 function generateMarkdown(data) {
   return `# ${data.title}
+  //license badge
+
+  ## Description
+
+  ## Table of Contents
+
+
+  ## Installation
+
+  ## Usage
+
+  ## License
+
+  ## Contributing
+
+  ## Testing
+
+  ## Questions
+  // if you have questions reach out to etc
 
 `;
 }
