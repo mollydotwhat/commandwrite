@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
 //inquirer (this uses 8.2.4)
 const inquirer = require('inquirer');
-const mysql = require('mysql2');
 const fs = require('fs');
 
 const generateMarkdown = require('./utils/generateMarkdown');
@@ -64,10 +63,17 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  var answered = inquirer.prompt(questions);
+  var markedIt = generateMarkdown(answered);
+  writeToFile('README.md', markedIt);
+  console.log("done!")
+}
 
 // Function call to initialize app
 init();
